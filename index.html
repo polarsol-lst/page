@@ -15,13 +15,11 @@
       --card: #ffffff;
       --border: #cbd5e1;
     }
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-
     body {
       background: linear-gradient(135deg, #f8fafc 0%, #e0f7f4 100%);
       color: var(--fg);
@@ -30,7 +28,6 @@
       scroll-behavior: smooth;
       overflow-x: hidden;
     }
-
     header, section, footer {
       padding: 4rem 1rem;
       max-width: 960px;
@@ -38,32 +35,27 @@
       position: relative;
       z-index: 1;
     }
-
     .hero {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
-
     .hero img {
       width: 80px;
       height: 80px;
       margin-bottom: 1rem;
     }
-
     .hero h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
-
     .hero p {
       font-size: 1.2rem;
       color: var(--muted);
       max-width: 600px;
       margin-bottom: 1.5rem;
     }
-
     .btn {
       background-color: var(--accent);
       color: #fff;
@@ -73,36 +65,30 @@
       font-weight: bold;
       transition: background-color 0.3s ease, transform 0.2s ease;
     }
-
     .btn:hover {
       background-color: var(--accent-dark);
       transform: translateY(-2px);
     }
-
     h2 {
       font-size: 2rem;
       margin-bottom: 1.5rem;
       text-align: center;
     }
-
     .features-section {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
       align-items: start;
     }
-
     .features-title {
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
-
     .features-title h2 {
       text-align: left;
       font-size: 2rem;
     }
-
     .features-list {
       display: flex;
       flex-direction: column;
@@ -110,23 +96,49 @@
       border-left: 1px solid var(--border);
       padding-left: 2rem;
     }
-
     .feature-item {
       display: flex;
       flex-direction: column;
       gap: 0.3rem;
     }
-
     .feature-item h3 {
       font-size: 1.125rem;
       font-weight: 600;
     }
-
     .feature-item p {
       color: var(--muted);
       font-size: 0.95rem;
     }
-
+    .testimonials {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .testimonial {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+    .testimonial p {
+      font-style: italic;
+      color: var(--fg);
+    }
+    .testimonial span {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+    .testimonial span a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .testimonial span a:hover {
+      color: var(--accent);
+    }
     .dyor {
       text-align: center;
       font-size: 0.875rem;
@@ -134,20 +146,17 @@
       max-width: 700px;
       margin: 2rem auto 0;
     }
-
     footer {
       text-align: center;
       color: var(--muted);
       padding: 2rem 1rem;
       font-size: 0.875rem;
     }
-
     footer a {
       color: var(--muted);
       text-decoration: none;
       margin: 0 0.5rem;
     }
-
     footer a:hover {
       color: var(--accent);
     }
@@ -163,7 +172,9 @@
 
   <section>
     <h2>About</h2>
-    <p style="text-align:center; max-width:700px; margin:0 auto; color:var(--muted);">PolarSOL is a liquid staking token (LST) operated by a seasoned validator who actively participates in and contributes to the Solana ecosystem. We don’t just run nodes — we use products, provide feedback, and shape the future of DeFi.</p>
+    <p style="text-align:center; max-width:700px; margin:0 auto; color:var(--muted);">
+      PolarSOL is a liquid staking token (LST) operated by a seasoned validator (pbear/polarbear) who actively participates in and contributes to the Solana ecosystem. We don’t just run nodes — we use products, provide feedback, and shape the future of DeFi.
+    </p>
   </section>
 
   <section>
@@ -189,6 +200,20 @@
           <h3>Shared Values</h3>
           <p>We act independently but not in isolation. We regularly consult our community and take into account the voice of our stakers before making governance decisions. Decentralization works best when values are aligned.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Feedback from Solana DEFI ecosystem</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>“Pbear is very easy to work with and sanctum is happy to support independent validators and actively involved community members”</p>
+        <span>— <a href="https://x.com/alkineee" target="_blank">Alkine (BD)</a>, <a href="https://app.sanctum.so/" target="_blank">Sanctum</a></span>
+      </div>
+      <div class="testimonial">
+        <p>“Pbear is a very valuable community member of Exponent. He quickly grasped how a complex protocol like Exponent works under the hood and frequently shares thoughtful feedback that helps improve, and sometimes even rethink, the app’s UX/UI. He doesn’t just provide feedback but also actively helps other community members looking to use Exponent. Definitely the kind of power user protocols look for.”</p>
+        <span>— <a href="https://x.com/ttrofel" target="_blank">Thomas</a>, <a href="https://www.exponent.finance/" target="_blank">Exponent</a></span>
       </div>
     </div>
   </section>
